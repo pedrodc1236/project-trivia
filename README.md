@@ -1,7 +1,7 @@
 Projeto de Trivia!
 
 Projeto em Grupo:
-• Pedro Tavares (eu)
+• pedrodc1236 (eu)
 • KarenFCano
 • vnpuga
 • GabrielFerrariR
