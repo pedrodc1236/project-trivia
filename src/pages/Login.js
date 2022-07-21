@@ -5,7 +5,6 @@ import { Settings } from '@material-ui/icons';
 import getToken from '../services/apiRequest';
 import { tokenAction, saveUser } from '../redux/actions';
 import './Login.css';
-import trivia from '../trivia.png';
 
 class Login extends Component {
   constructor() {
@@ -45,50 +44,47 @@ class Login extends Component {
   render() {
     const { name, gravatarEmail, isPlayBtnDisabled } = this.state;
     return (
-      <>
-        <img src={ trivia } alt="trivia-logo" width="500px" className="trivia-logo" />
-        <div className="container-login">
-          <fieldset className="login">
-            <input
-              type="text"
-              data-testid="input-player-name"
-              placeholder="Digite seu nome"
-              name="name"
-              value={ name }
-              onChange={ this.handleChange }
-              className="form-control"
-            />
-            <input
-              type="text"
-              data-testid="input-gravatar-email"
-              placeholder="Digite seu email"
-              name="gravatarEmail"
-              value={ gravatarEmail }
-              onChange={ this.handleChange }
-              className="form-control"
-            />
-            <div className="container-buttons">
-              <button
-                type="button"
-                data-testid="btn-play"
-                disabled={ isPlayBtnDisabled }
-                onClick={ this.onPlayBtnClick }
-                className={ !isPlayBtnDisabled ? 'bounce' : 'no-bounce' }
-              >
-                PLAY
-              </button>
-            </div>
+      <div className="container-login">
+        <fieldset className="login">
+          <input
+            type="text"
+            data-testid="input-player-name"
+            placeholder="Digite seu nome"
+            name="name"
+            value={ name }
+            onChange={ this.handleChange }
+            className="form-control"
+          />
+          <input
+            type="text"
+            data-testid="input-gravatar-email"
+            placeholder="Digite seu email"
+            name="gravatarEmail"
+            value={ gravatarEmail }
+            onChange={ this.handleChange }
+            className="form-control"
+          />
+          <div className="container-buttons">
             <button
               type="button"
-              data-testid="btn-settings"
-              onClick={ this.onConfigClick }
-              className="config-button"
+              data-testid="btn-play"
+              disabled={ isPlayBtnDisabled }
+              onClick={ this.onPlayBtnClick }
+              className={ !isPlayBtnDisabled ? 'bounce' : 'no-bounce' }
             >
-              <Settings fontSize="large" className="setting-btn" />
+              PLAY
             </button>
-          </fieldset>
-        </div>
-      </>
+          </div>
+          <button
+            type="button"
+            data-testid="btn-settings"
+            onClick={ this.onConfigClick }
+            className="config-button"
+          >
+            <Settings fontSize="large" className="setting-btn" />
+          </button>
+        </fieldset>
+      </div>
     );
   }
 }
