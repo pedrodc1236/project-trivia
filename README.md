@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto de Trivia :video_game:</h1>
+<h1 align="center">Trivia :video_game:</h1>
 
 <p align="center">
   <img src="./public/gif1.gif" />
