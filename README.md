@@ -10,10 +10,6 @@
  
 </div>
 
-<p align="center">
-  <img src="./public/gif1.gif" />
-</p>
-
 # About
 This was a collaborative project made by me, [Gabriel Ferrari](), [Karen Cano](), [Viviane Puga](), [Rosy Mariana]() and [Raynan]() , a fun trivia that challenges the user to answer as many questions as possible in the shortest possible time. See the application [here](https://triviafdm.netlify.app/).
 
