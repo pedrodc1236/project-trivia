@@ -31,5 +31,3 @@ npm install
 ```bash
  npm start
  ``` 
-
- If you want to see the aplication on web, click [here.]()
